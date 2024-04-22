@@ -14,14 +14,15 @@ spring:
     active: dev
   cloud:
     nacos:
-      username: @nacos.username@
-      password: @nacos.password@
+      #username: @nacos.username@
+      #password: @nacos.password@
+      namespace: mf
       discovery:
         # 服务注册地址
-        server-addr: @nacos.server-addr@
+        server-addr: ${NACOS_DISCOVERY_ADDR:192.168.204.32:8848}
       config:
         # 配置中心地址
-        server-addr: @nacos.server-addr@
+        server-addr: ${NACOS_DISCOVERY_ADDR:192.168.204.32:8848}
         # 配置文件格式
         file-extension: yml
         # 共享配置

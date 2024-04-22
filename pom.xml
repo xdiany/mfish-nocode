@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -52,7 +52,8 @@
         <qiniu-sdk.version>7.15.0</qiniu-sdk.version>
         <rocketmq.version>2.3.0</rocketmq.version>
         <bcprov.version>1.78</bcprov.version>
-        <oracle.version>23.2.0.0</oracle.version>
+        <!--<oracle.version>23.2.0.0</oracle.version>-->
+        <oracle.version>21.5.0.0</oracle.version>
         <pgsql.version>42.7.3</pgsql.version>
         <easyexcel.version>3.3.4</easyexcel.version>
     </properties>
@@ -315,7 +316,7 @@
             <!-- oracle驱动 -->
             <!--oracle连接驱动-->
             <dependency>
-                <groupId>com.oracle</groupId>
+                <groupId>com.oracle.database.jdbc</groupId>
                 <artifactId>ojdbc8</artifactId>
                 <version>${oracle.version}</version>
             </dependency>
